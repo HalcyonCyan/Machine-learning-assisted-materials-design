@@ -15,8 +15,8 @@ import sys
 
 def parse_args():
     p = argparse.ArgumentParser(description="按文件数阈值在 A 与 B 之间移动子文件夹（非递归计数）。")
-    p.add_argument("--a", default=r"C:\Users\10169\Downloads\a", help="A 路径（默认：%(default)s）")
-    p.add_argument("--b", default=r"C:\Users\10169\Downloads\b", help="B 路径（默认：%(default)s）")
+    p.add_argument("--a", default=r"C:\Users\Downloads\a", help="A 路径（默认：%(default)s）")
+    p.add_argument("--b", default=r"C:\Users\Downloads\b", help="B 路径（默认：%(default)s）")
     p.add_argument("--lt", type=int, default=7, help="A 中判定“小于”的阈值（默认：7）")
     p.add_argument("--gt", type=int, default=7, help="B 中判定“大于”的阈值（默认：7）")
     p.add_argument("--dry-run", action="store_true", help="试运行：只打印不移动")
